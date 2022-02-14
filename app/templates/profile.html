@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="container rounder-lg shadow col-md-8">
+    <div class="row  justify-content-center ">
+        <div class="col-md-12 p-0 pb-3">
+            <div class="shadow
+            d-flex justify-content-center 
+            align-items-center rounded-lg flex-column bg-success">
+                <img class="rounded-circle" src=
+                "{{ url_for('static', filename='images/undraw_profile_pic_ic-5-t.svg') }}"
+                 alt="Profile picture" width= "300" height="300"  >
+
+                <div class="person-name my-2">
+                    <h1 class="text-white">{{name}}</h1>
+                    <!-- <h3 class="text-dark">{{name}}</h3> -->
+                </div>
+                <div class="info">
+                    <h6 class="text-white">@rrsenior</h6>
+                </div>
+                <div class="info">
+                    <h6 class="text-white">Kingston,Jamaica</h6>
+                </div>
+
+                <div class="info">
+                    <h6 class="text-white">{{MonthAndYr}}</h6>
+                </div>
+
+
+            </div>
+        </div>
+    
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8 justify-content-center align-items-center">
+            <div class="info pb-5">
+                <h4>
+                    I intend to become a proficient web developer. It takes significant effort.
+                     But where the determination is, the way can be found.  
+                </h4>
+
+            </div>
+            <div class="metrics d-flex justify-content-center pb-5">
+                <div class="row col-md-8  
+                    align-items-center">
+                    <div class="col text-center">
+                        <div class="number"><span><h4> 7</h4></span></div>
+                        <div class="label"><span><h5> Posts</h5></span></div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="number"><span><h4> 100</h4></span></div>
+                        <div class="label"><span><h5> Following</h5></span></div>
+
+                    </div>
+                    <div class="col text-center">
+                        <div class="number"><span><h4> 250</h4></span></div>
+                        <div class="label"><span><h5> Followers</h5></span></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-md-12 d-flex justify-content-center pb-5">
+                <div class="selection col-md-6  d-flex justify-content-center">
+                    <button type="button" class="btn btn-success">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
